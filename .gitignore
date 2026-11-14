@@ -1,0 +1,22 @@
+# Dependencias y builds
+node_modules/
+dist/
+.angular/
+*.tmp.mjs
+
+# Originales pesados del restaurante (no se publican)
+sitio/fuentes-fotos/
+sitio/fuentes-menu/
+
+# Capturas de revisión y configuración local
+sitio/.impeccable/review/
+.claude/
+sitio/.claude/
+.vscode/
+.env
+.env.*
+
+# HyperFrames: cachés y renders
+video-heroe/.hyperframes/
+video-heroe/renders/
+video-heroe/node_modules/

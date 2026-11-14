@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T20:53:49.060Z",
+  "title": "Design System: Boca del Cielo",
+  "extensions": {
+    "colorMeta": {
+      "amarillo": {
+        "role": "primary",
+        "displayName": "Amarillo Pincel",
+        "canonical": "#f5c518",
+        "tonalRamp": [
+          "#3e340e",
+          "#725d13",
+          "#ab8a12",
+          "#e9b90c",
+          "#eec944",
+          "#ecd583",
+          "#f0e5bc",
+          "#f9f6eb"
+        ]
+      },
+      "amarillo-claro": {
+        "role": "primary",
+        "displayName": "Amarillo Claro",
+        "canonical": "#ffd43b",
+        "tonalRamp": [
+          "#40350c",
+          "#765f0e",
+          "#b28d0b",
+          "#f3be02",
+          "#f6cd3c",
+          "#f1d87e",
+          "#f3e6ba",
+          "#faf7eb"
+        ]
+      },
+      "azul": {
+        "role": "secondary",
+        "displayName": "Azul Madera",
+        "canonical": "#0f3a57",
+        "tonalRamp": [
+          "#142a39",
+          "#1e4967",
+          "#246a99",
+          "#268bcf",
+          "#57a6db",
+          "#8fbfe0",
+          "#c2daea",
+          "#edf3f8"
+        ]
+      },
+      "azul-hondo": {
+        "role": "secondary",
+        "displayName": "Azul Hondo",
+        "canonical": "#0a2a40",
+        "tonalRamp": [
+          "#132a39",
+          "#1c4968",
+          "#226a9b",
+          "#238bd2",
+          "#55a6dd",
+          "#8ebfe1",
+          "#c2daeb",
+          "#edf3f8"
+        ]
+      },
+      "azul-veta": {
+        "role": "secondary",
+        "displayName": "Azul Veta",
+        "canonical": "#164a6d",
+        "tonalRamp": [
+          "#152a38",
+          "#204965",
+          "#276996",
+          "#2b8aca",
+          "#5ba5d7",
+          "#92bfde",
+          "#c3dae9",
+          "#edf3f7"
+        ]
+      },
+      "azul-texto": {
+        "role": "secondary",
+        "displayName": "Azul Neblina",
+        "canonical": "#c3d6e4",
+        "tonalRamp": [
+          "#1c2830",
+          "#2f4556",
+          "#3f637e",
+          "#4d81a8",
+          "#769ebc",
+          "#a2bbcd",
+          "#cbd8e1",
+          "#eff3f5"
+        ]
+      },
+      "chile": {
+        "role": "tertiary",
+        "displayName": "Chile",
+        "canonical": "#a92e1c",
+        "tonalRamp": [
+          "#391813",
+          "#68271d",
+          "#9a3223",
+          "#d03a24",
+          "#db6857",
+          "#e1998f",
+          "#eac7c2",
+          "#f8eeed"
+        ]
+      },
+      "verde-abierto": {
+        "role": "tertiary",
+        "displayName": "Verde Abierto",
+        "canonical": "#1f7a4d",
+        "tonalRamp": [
+          "#173626",
+          "#236143",
+          "#2d905f",
+          "#33c27b",
+          "#62d09a",
+          "#96dab8",
+          "#c5e7d6",
+          "#eef7f2"
+        ]
+      },
+      "papel": {
+        "role": "neutral",
+        "displayName": "Papel Arena",
+        "canonical": "#f6efe3",
+        "tonalRamp": [
+          "#342a19",
+          "#5d4928",
+          "#896a34",
+          "#b88b3d",
+          "#c9a669",
+          "#d5bf9a",
+          "#e5dac8",
+          "#f6f3ee"
+        ]
+      },
+      "papel-2": {
+        "role": "neutral",
+        "displayName": "Papel Doblado",
+        "canonical": "#ece1cd",
+        "tonalRamp": [
+          "#322a1a",
+          "#5a492b",
+          "#846939",
+          "#b08a44",
+          "#c3a56f",
+          "#d1bf9e",
+          "#e3dac9",
+          "#f6f3ef"
+        ]
+      },
+      "papel-tarjeta": {
+        "role": "neutral",
+        "displayName": "Papel de Tarjeta",
+        "canonical": "#fbf6ec",
+        "tonalRamp": [
+          "#372c15",
+          "#644e20",
+          "#957028",
+          "#c9952c",
+          "#d6ad5c",
+          "#ddc492",
+          "#e9dcc4",
+          "#f7f4ed"
+        ]
+      },
+      "papel-borde": {
+        "role": "neutral",
+        "displayName": "Borde de Papel",
+        "canonical": "#d8c9ae",
+        "tonalRamp": [
+          "#2f291d",
+          "#544730",
+          "#7c6741",
+          "#a48650",
+          "#b9a279",
+          "#ccbda4",
+          "#e0d9cc",
+          "#f5f3f0"
+        ]
+      },
+      "tinta": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "#13222d",
+        "tonalRamp": [
+          "#1c2831",
+          "#2d4657",
+          "#3d6480",
+          "#4a82ab",
+          "#739fbf",
+          "#a0bbcf",
+          "#cbd8e2",
+          "#eff3f5"
+        ]
+      },
+      "tinta-2": {
+        "role": "neutral",
+        "displayName": "Tinta Lavada",
+        "canonical": "#45535e",
+        "tonalRamp": [
+          "#22272a",
+          "#3a434a",
+          "#52606b",
+          "#687d8d",
+          "#8b9ba7",
+          "#afb9c0",
+          "#d2d7db",
+          "#f1f2f3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "h1 del héroe y de /menu."
+      },
+      "pincel": {
+        "displayName": "Pincel",
+        "purpose": "Solo \"mar,\" del héroe, \"menú\" del h1 de /menu y el lema \"antojitos del mar\"; además, dentro del dibujo del sello grande."
+      },
+      "headline": {
+        "displayName": "Título de sección",
+        "purpose": "Títulos de sección y categorías del menú."
+      },
+      "title": {
+        "displayName": "Nombre",
+        "purpose": "Nombres de platillo, bebida, grupo y categoría."
+      },
+      "lead": {
+        "displayName": "Bajada",
+        "purpose": "Bajadas bajo el h1 y descripción del detalle."
+      },
+      "body": {
+        "displayName": "Texto",
+        "purpose": "Texto corrido y descripciones."
+      },
+      "label": {
+        "displayName": "Etiqueta",
+        "purpose": "Botones, renglones de carta, navegación."
+      },
+      "dato": {
+        "displayName": "Dato",
+        "purpose": "Precios, horario, teléfonos y conteos con cifras tabulares."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sombra-papel",
+        "value": "0 1px 2px rgb(19 34 45 / 0.08), 0 8px 24px -10px rgb(19 34 45 / 0.25)",
+        "purpose": "Tarjetas de platillo, foto de sucursal, botón cerrar."
+      },
+      {
+        "name": "sombra-alta",
+        "value": "0 2px 6px rgb(10 42 64 / 0.18), 0 24px 60px -20px rgb(10 42 64 / 0.55)",
+        "purpose": "Papel sobre madera, marco del héroe, diálogo de detalle."
+      },
+      {
+        "name": "sombra-tarjeta-hover",
+        "value": "0 2px 4px rgb(19 34 45 / 0.08), 0 18px 36px -14px rgb(19 34 45 / 0.35)",
+        "purpose": "Tarjeta de favorito al pasar el puntero (sube 3px)."
+      },
+      {
+        "name": "brillo-pincel",
+        "value": "0 1px 0 rgb(255 255 255 / 0.4) inset, 0 6px 18px -6px rgb(245 197 24 / 0.6)",
+        "purpose": "Solo el botón principal."
+      },
+      {
+        "name": "sombra-sello",
+        "value": "drop-shadow(0 6px 10px rgb(10 42 64 / 0.3))",
+        "purpose": "Sello grande sobre fotos."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-salida",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Transiciones de estado y entradas."
+      },
+      {
+        "name": "ease-entra-sale",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Movimientos de ida y vuelta."
+      },
+      {
+        "name": "d-rapida",
+        "value": "150ms",
+        "purpose": "Presión de botón, color de filtros."
+      },
+      {
+        "name": "d-media",
+        "value": "220ms",
+        "purpose": "Hover de tarjetas y botones, subrayado de navegación, apertura de diálogo."
+      },
+      {
+        "name": "d-lenta",
+        "value": "420ms",
+        "purpose": "Giro del sello en hover."
+      },
+      {
+        "name": "view-transition",
+        "value": "220ms",
+        "purpose": "Expansión de tarjeta de favorito a detalle (View Transitions)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "chico",
+        "value": "36rem"
+      },
+      {
+        "name": "cabecera-compacta",
+        "value": "40rem"
+      },
+      {
+        "name": "una-columna",
+        "value": "60rem"
+      }
+    ],
+    "materials": [
+      {
+        "name": "veta",
+        "purpose": "Veta de madera pintada en secciones azules, mosaico de 600px. Provisional: ruido SVG (feTurbulence) en espera de un raster real de tablón pintado."
+      },
+      {
+        "name": "fibra",
+        "purpose": "Fibra de papel en secciones claras y en tarjetas sobre madera."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón principal",
+      "kind": "button",
+      "refersTo": "button-principal",
+      "description": "Acción principal; uno por vista. Único botón amarillo.",
+      "html": "<a class=\"ds-boton ds-principal\" href=\"#\">Ver el menú <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-boton{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:3.25rem;padding:0 1.4em;border-radius:999px;border:2px solid transparent;font-family:var(--f-texto,'Archivo Variable',system-ui,sans-serif);font-size:1.0625rem;font-weight:650;font-variation-settings:'wdth' 92;text-decoration:none;cursor:pointer;transition:transform 150ms cubic-bezier(.22,1,.36,1),background-color 220ms cubic-bezier(.22,1,.36,1),box-shadow 220ms cubic-bezier(.22,1,.36,1)}.ds-boton svg{width:1.2em;height:1.2em}.ds-boton:active{transform:scale(.97)}.ds-boton:focus-visible{outline:3px solid #f5c518;outline-offset:3px}.ds-principal{background:#f5c518;color:#0a2a40;box-shadow:0 1px 0 rgb(255 255 255/.4) inset,0 6px 18px -6px rgb(245 197 24/.6)}.ds-principal:hover{background:#ffd43b;box-shadow:0 1px 0 rgb(255 255 255/.4) inset,0 10px 26px -8px rgb(245 197 24/.75)}"
+    },
+    {
+      "name": "Botón azul",
+      "kind": "button",
+      "refersTo": "button-azul",
+      "description": "Acción de navegación sobre papel.",
+      "html": "<a class=\"ds-boton-azul\" href=\"#\">Abrir el menú completo</a>",
+      "css": ".ds-boton-azul{display:inline-flex;align-items:center;min-height:3.25rem;padding:0 1.4em;border-radius:999px;border:2px solid transparent;background:#0f3a57;color:#f6efe3;font-family:'Archivo Variable',system-ui,sans-serif;font-size:1.0625rem;font-weight:650;text-decoration:none;transition:background-color 220ms cubic-bezier(.22,1,.36,1),transform 150ms}.ds-boton-azul:hover{background:#164a6d}.ds-boton-azul:active{transform:scale(.97)}.ds-boton-azul:focus-visible{outline:3px solid #0f3a57;outline-offset:3px}"
+    },
+    {
+      "name": "Botón contorno",
+      "kind": "button",
+      "refersTo": "button-contorno",
+      "description": "Acción secundaria; papel sobre madera, azul sobre papel.",
+      "html": "<div class=\"ds-madera\"><a class=\"ds-contorno\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4.5 19.5l1.1-3.6A8 8 0 1 1 8.4 18.6z\"/></svg> Pedir por WhatsApp</a></div>",
+      "css": ".ds-madera{background:#0f3a57;padding:1.5rem;color:#f6efe3}.ds-contorno{display:inline-flex;align-items:center;gap:.6em;min-height:3.25rem;padding:0 1.4em;border-radius:999px;border:2px solid currentColor;background:transparent;color:inherit;font-family:'Archivo Variable',system-ui,sans-serif;font-size:1.0625rem;font-weight:650;text-decoration:none;transition:background-color 220ms}.ds-contorno svg{width:1.2em;height:1.2em}.ds-contorno:hover{background:rgb(246 239 227/.1)}.ds-contorno:focus-visible{outline:3px solid #f5c518;outline-offset:3px}"
+    },
+    {
+      "name": "Filtro",
+      "kind": "chip",
+      "refersTo": "filtro",
+      "description": "Filtro de la carta sobre madera; activo relleno de papel.",
+      "html": "<div class=\"ds-madera-f\"><button class=\"ds-filtro\" aria-pressed=\"true\">Picante</button> <button class=\"ds-filtro\" aria-pressed=\"false\">Crudo</button></div>",
+      "css": ".ds-madera-f{background:#0f3a57;padding:1.5rem;display:flex;gap:.5rem}.ds-filtro{min-height:2.5rem;padding:0 1rem;border-radius:999px;border:1.5px solid rgb(246 239 227/.45);background:transparent;color:#f6efe3;font:550 .9375rem 'Archivo Variable',system-ui,sans-serif;cursor:pointer;transition:background-color 150ms,color 150ms,border-color 150ms}.ds-filtro:hover{border-color:#f6efe3}.ds-filtro[aria-pressed=true]{background:#f6efe3;color:#0a2a40;border-color:#f6efe3}.ds-filtro:focus-visible{outline:3px solid #f5c518;outline-offset:3px}"
+    },
+    {
+      "name": "Buscador",
+      "kind": "input",
+      "refersTo": "buscador",
+      "description": "Búsqueda de la carta en píldora de papel; foco amarillo.",
+      "html": "<div class=\"ds-madera-b\"><label class=\"ds-buscador\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\"><circle cx=\"11\" cy=\"11\" r=\"6.5\"/><path d=\"M16 16l4 4\"/></svg><input type=\"search\" placeholder=\"Busca un platillo\"></label></div>",
+      "css": ".ds-madera-b{background:#0f3a57;padding:1.5rem}.ds-buscador{display:flex;align-items:center;gap:.5rem;min-height:3.25rem;padding:0 1rem;border-radius:999px;background:#f6efe3;color:#13222d;transition:box-shadow 220ms}.ds-buscador svg{width:1.2em;height:1.2em;color:#0f3a57}.ds-buscador:focus-within{box-shadow:0 0 0 3px #f5c518}.ds-buscador input{flex:1;border:0;background:transparent;outline:none;font:1.0625rem 'Archivo Variable',system-ui,sans-serif;color:inherit}"
+    },
+    {
+      "name": "Navegación",
+      "kind": "nav",
+      "refersTo": "cabecera",
+      "description": "Cabecera fija azul hondo translúcida con subrayado que crece.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-nombre\">Boca del Cielo</span><a href=\"#\">Favoritos</a><a href=\"#\" class=\"activo\">Menú</a><a href=\"#\">Sucursal</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:1.5rem;min-height:4rem;padding:0 1.5rem;background:rgb(10 42 64/.94);color:#f6efe3;font-family:'Archivo Variable',system-ui,sans-serif}.ds-nav-nombre{font:400 1.6rem/1 'Bebas Neue','Arial Narrow',sans-serif;letter-spacing:.02em;margin-right:auto}.ds-nav a{color:inherit;font-weight:550;font-size:.9375rem;text-decoration:none;padding:.5rem .1rem;background:linear-gradient(#f6efe3,#f6efe3) no-repeat left 88%/0 2px;transition:background-size 220ms cubic-bezier(.22,1,.36,1)}.ds-nav a:hover,.ds-nav a.activo{background-size:100% 2px}.ds-nav a:focus-visible{outline:3px solid #f5c518;outline-offset:3px}"
+    },
+    {
+      "name": "Tarjeta de favorito",
+      "kind": "card",
+      "refersTo": "tarjeta-platillo",
+      "description": "Platillo favorito en papel de tarjeta con sello y precios en mono.",
+      "html": "<button class=\"ds-tarjeta\"><span class=\"ds-sello-chico\">Favorito</span><span class=\"ds-tarjeta-nombre\">Aguachile negro</span><span class=\"ds-tarjeta-precio\">Tostada $64 · Orden $210</span></button>",
+      "css": ".ds-tarjeta{display:grid;gap:.25rem;justify-items:start;width:18rem;padding:1.5rem;text-align:left;border:1px solid #d8c9ae;border-radius:26px;background:#fbf6ec;color:#13222d;box-shadow:0 1px 2px rgb(19 34 45/.08),0 8px 24px -10px rgb(19 34 45/.25);cursor:pointer;transition:transform 220ms cubic-bezier(.22,1,.36,1),box-shadow 220ms cubic-bezier(.22,1,.36,1)}.ds-tarjeta:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgb(19 34 45/.08),0 18px 36px -14px rgb(19 34 45/.35)}.ds-tarjeta:focus-visible{outline:3px solid #0f3a57;outline-offset:3px}.ds-tarjeta-nombre{font:400 2rem/.95 'Bebas Neue','Arial Narrow',sans-serif;color:#0a2a40;margin-top:.5rem}.ds-tarjeta-precio{font:400 .8125rem 'Geist Mono Variable',ui-monospace,monospace;font-variant-numeric:tabular-nums;color:#45535e}.ds-sello-chico{padding:.3em .65em .22em;border-radius:999px;border:1.5px solid #0f3a57;background:#f6efe3;color:#0f3a57;font:400 .9rem/1 'Bebas Neue',sans-serif;letter-spacing:.06em}"
+    },
+    {
+      "name": "Sello de frasco",
+      "kind": "custom",
+      "refersTo": "sello-favorito",
+      "description": "Etiqueta redonda de la casa como insignia grande sobre fotos.",
+      "html": "<svg class=\"ds-sello\" viewBox=\"0 0 120 120\" role=\"img\" aria-label=\"Favorito\"><defs><path id=\"ds-c\" d=\"M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0\"/></defs><circle cx=\"60\" cy=\"60\" r=\"57\" fill=\"#f6efe3\"/><circle cx=\"60\" cy=\"60\" r=\"53\" fill=\"none\" stroke=\"#0f3a57\" stroke-width=\"1.2\"/><circle cx=\"60\" cy=\"60\" r=\"35\" fill=\"none\" stroke=\"#0f3a57\" stroke-width=\"1.2\"/><text class=\"ds-orla\"><textPath href=\"#ds-c\" textLength=\"276\">BOCA DEL CIELO · ANTOJITOS DEL MAR ·</textPath></text><text x=\"60\" y=\"68\" text-anchor=\"middle\" class=\"ds-centro\">Favorito</text></svg>",
+      "css": ".ds-sello{width:7.5rem;transform:rotate(-10deg);filter:drop-shadow(0 6px 10px rgb(10 42 64/.3));overflow:visible}.ds-orla{font:400 11.5px 'Bebas Neue',sans-serif;letter-spacing:.5px;fill:#0f3a57}.ds-centro{font:400 20px 'Caveat Brush',cursive;fill:#0f3a57}"
+    },
+    {
+      "name": "Ola",
+      "kind": "custom",
+      "refersTo": "ola",
+      "description": "Borde de oleaje de dos capas entre madera y papel.",
+      "html": "<div class=\"ds-ola-caja\"><svg class=\"ds-ola\" viewBox=\"0 0 1440 90\" preserveAspectRatio=\"none\"><path opacity=\".45\" fill=\"#f6efe3\" d=\"M-80 52c90-26 170-30 262-10 98 21 160 24 262 0 100-23 170-25 268-2 96 22 168 20 262-4 100-25 182-22 270 4 70 20 136 20 200 6V90H-80z\"/><path fill=\"#f6efe3\" d=\"M0 62c80-18 158-20 238-4 88 18 152 18 240-2 92-20 166-20 254 2 86 21 160 20 246-2 90-22 172-20 258 2 72 18 136 18 204 6V90H0z\"/></svg><div class=\"ds-ola-papel\"></div></div>",
+      "css": ".ds-ola-caja{background:#0f3a57;padding-top:3rem}.ds-ola{display:block;width:100%;height:48px}.ds-ola-papel{height:2rem;background:#f6efe3}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La mesa de Boca del Cielo vista desde arriba",
+    "overview": "El sitio es la mesa del local: tablón de madera pintada de azul marino con veta, papel de menú color arena encima, frascos de vidrio con su etiqueta redonda \"Boca del Cielo · antojitos del mar\", conchas dibujadas a línea y un solo trazo de pincel amarillo. Las secciones alternan entre madera (oscuras, texto papel) y papel (claras, texto tinta), y se separan con bordes de ola irregulares, nunca con una línea recta.\n\nLa densidad es de carta de restaurante: nombres grandes y condensados, precios alineados en cifras tabulares, renglones con regla punteada o discontinua como en un menú impreso. Las piezas de papel se apoyan sobre la madera con una sombra suave y a veces giradas uno o dos grados, como hojas dejadas en la mesa. El acento amarillo es escaso a propósito: marca la acción principal y una palabra.\n\nEl mundo rechaza la plantilla genérica de restaurante: foto a sangre con titular centrado y tres tarjetas iguales. Las fotos son reales (platillos de su sitio y bebidas recortadas de su menú), nunca imágenes generadas.",
+    "keyCharacteristics": [
+      "Dos materiales: madera azul (#0f3a57 con veta) y papel arena (#f6efe3 con fibra).",
+      "Un acento amarillo pincel, solo en la acción principal y el trazo bajo \"mar\".",
+      "Cuatro voces tipográficas con papeles fijos: Bebas Neue, Caveat Brush, Archivo, Geist Mono.",
+      "Etiqueta redonda de frasco como sistema de insignias.",
+      "Bordes de ola entre madera y papel; conchas e iconos a línea de un solo trazo.",
+      "Esquinas redondeadas y píldoras; nada de cantos vivos en piezas interactivas."
+    ],
+    "rules": [
+      {
+        "name": "The Un Solo Pincel Rule",
+        "body": "El amarillo vive en cuatro lugares: botón principal, trazo bajo \"mar,\" del héroe, anillo de foco y selección de texto. Ningún fondo de sección, insignia, ícono ni borde decorativo es amarillo. Si una pantalla tiene dos botones amarillos, uno sobra.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dos Materiales Rule",
+        "body": "Toda sección es madera o papel, nunca un tercer fondo. El texto se asigna por material: papel y azul neblina sobre madera; tinta y tinta lavada sobre papel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Pincel Contado Rule",
+        "body": "Caveat Brush como tipografía de texto aparece en tres lugares: la palabra \"mar,\" del héroe, la palabra \"menú\" del h1 de /menu y el lema \"antojitos del mar\" del pie. Dentro del sello grande, la palabra central es parte del dibujo de la etiqueta, no texto de interfaz. La fuente se sirve recortada a esas letras.",
+        "section": "typography"
+      },
+      {
+        "name": "The Cifra en Mono Rule",
+        "body": "Todo precio, horario y teléfono va en Geist Mono con cifras tabulares, para que las columnas de precios se alineen como en la carta impresa.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rótulo Rule",
+        "body": "Los títulos de sección y los nombres de platillo son Bebas Neue en peso 400, en caja natural; nunca Archivo en negrita como título.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hoja Sobre la Mesa Rule",
+        "body": "La sombra describe papel apoyado en madera: difusa, con tinte azul y desplazamiento vertical. Al pasar el puntero una tarjeta sube 3px y su sombra se alarga; en reposo no hay brillos ni contornos luminosos.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** alternar secciones de madera azul y papel arena, unidas por la ola.",
+      "**Do** reservar el amarillo pincel (#f5c518) para el botón principal, el trazo bajo \"mar,\", el anillo de foco y la selección.",
+      "**Do** poner precios, horarios y teléfonos en Geist Mono con cifras tabulares.",
+      "**Do** usar el sello redondo de frasco (grande sobre fotos, píldora en listas) para Favorito, Nuevo y Picante.",
+      "**Do** usar la concha a línea cuando falta foto real, y el frasco ilustrado para bebidas.",
+      "**Do** dar a las piezas de papel sobre madera sombra azul difusa y, si están sueltas, un giro de 1° como máximo.",
+      "**Do** respetar `prefers-reduced-motion`: el oleaje y las entradas se detienen."
+    ],
+    "donts": [
+      "**Don't** usar amarillo en fondos, insignias, iconos, bordes decorativos ni en un segundo botón de la misma vista.",
+      "**Don't** escribir a pincel (Caveat Brush) fuera de \"mar,\", \"menú\" y el lema \"antojitos del mar\"; los títulos de sección van en Bebas Neue.",
+      "**Don't** separar madera y papel con una línea recta; el cambio de material siempre es una ola.",
+      "**Don't** usar sombras negras o desplazadas en duro; la profundidad es papel apoyado en madera.",
+      "**Don't** usar fotos generadas o de banco para platillos o bebidas.",
+      "**Don't** usar emojis ni iconos de fuente; los iconos son SVG a línea de un solo trazo.",
+      "**Don't** introducir un tercer material de fondo ni modo oscuro."
+    ]
+  }
+}

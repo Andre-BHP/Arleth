@@ -1,0 +1,108 @@
+<main id="contenido">
+  <header class="cabeza madera">
+    <div class="envoltura">
+      <h1>El <span class="pincel subrayado">menú</span></h1>
+      <p class="bajada">Precios en el local, en pesos. Todo se prepara al momento.</p>
+
+      <div class="controles">
+        <label class="buscador">
+          <span class="solo-lector">Buscar en el menú</span>
+          <app-icono nombre="buscar" />
+          <input
+            type="search"
+            placeholder="Busca un platillo: aguachile, pulpo, michelada…"
+            [value]="busqueda()"
+            (input)="busqueda.set($any($event.target).value)"
+            autocomplete="off"
+            enterkeyhint="search"
+          />
+        </label>
+
+        <div class="vista" role="group" aria-label="Forma de ver el menú">
+          <button type="button" [attr.aria-pressed]="vista() === 'lista'" (click)="cambiarVista('lista')">
+            <app-icono nombre="lista" /> Lista rápida
+          </button>
+          <button type="button" [attr.aria-pressed]="vista() === 'fotos'" (click)="cambiarVista('fotos')">
+            <app-icono nombre="cuadricula" /> Con fotos
+          </button>
+        </div>
+      </div>
+
+      <div class="filtros" role="group" aria-label="Filtrar">
+        @for (f of filtros; track f.id) {
+          <button type="button" class="filtro" [attr.aria-pressed]="activos().has(f.id)" (click)="alternar(f.id)">{{ f.nombre }}</button>
+        }
+        @if (filtrando()) {
+          <button type="button" class="limpiar" (click)="limpiar()">Quitar filtros</button>
+        }
+      </div>
+      <p class="conteo dato" aria-live="polite">
+        @if (filtrando()) { {{ total() }} {{ total() === 1 ? 'resultado' : 'resultados' }} }
+      </p>
+    </div>
+  </header>
+  <app-ola color="var(--papel)" />
+
+  <div class="envoltura cuerpo" [class.con-fotos]="vista() === 'fotos'">
+    <nav class="indice" aria-label="Categorías del menú">
+      <ol #indice>
+        @for (c of categorias(); track c.id) {
+          <li>
+            <a [href]="'menu#' + c.id" [attr.data-cat]="c.id" [class.activa]="activa() === c.id" [attr.aria-current]="activa() === c.id ? 'true' : null" (click)="ir(c.id, $event)">{{ c.nombre }}</a>
+          </li>
+        }
+      </ol>
+    </nav>
+
+    <div class="carta">
+      @for (c of categorias(); track c.id) {
+        <section class="categoria" [id]="c.id" [attr.aria-labelledby]="c.id + '-t'">
+          <h2 [id]="c.id + '-t'">{{ c.titulo }}</h2>
+          @if (c.nota) { <p class="nota">{{ c.nota }}</p> }
+
+          @for (s of c.secciones; track $index) {
+            @if (s.titulo) { <h3 class="subtitulo">{{ s.titulo }}</h3> }
+            <ul class="platillos">
+              @for (p of s.items; track p.id) {
+                <li class="platillo" [class.con-foto]="vista() === 'fotos' && p.foto">
+                  @if (vista() === 'fotos' && p.foto) {
+                    <span class="miniatura" [class.recorte]="p.foto.endsWith('recorte')">
+                      <app-foto [nombre]="p.foto" [alt]="p.nombre" tamanos="(min-width: 60rem) 22rem, calc(100vw - 2rem)" />
+                    </span>
+                  }
+                  <div class="renglon">
+                    <p class="nombre-platillo" role="heading" [attr.aria-level]="s.titulo ? 4 : 3">{{ p.nombre }}</p>
+                    @if (etiquetas(p).length) {
+                      <span class="sellos">
+                        @for (t of etiquetas(p); track t) { <app-sello [tipo]="t" /> }
+                      </span>
+                    }
+                  </div>
+                  @if (p.desc) { <p class="desc">{{ p.desc }}</p> }
+                  <dl class="precios">
+                    @for (pr of p.precios; track $index) {
+                      <div>
+                        @if (pr.t) { <dt>{{ pr.t }}</dt> } @else { <dt class="solo-lector">Precio</dt> }
+                        <dd class="dato">{{ pesos(pr.v) }}</dd>
+                      </div>
+                    }
+                  </dl>
+                  <button type="button" class="agregar" (click)="agregar(p)" [attr.aria-label]="'Agregar ' + p.nombre + ' al pedido'">
+                    <app-icono nombre="mas" /><span aria-hidden="true">Agregar</span>
+                  </button>
+                </li>
+              }
+            </ul>
+          }
+        </section>
+      } @empty {
+        <div class="vacio">
+          <p class="vacio-titulo">Nada por aquí.</p>
+          <p>No encontramos “{{ busqueda() }}” con esos filtros. Prueba con otra palabra o quita los filtros.</p>
+          <button type="button" class="boton boton-azul" (click)="limpiar()">Ver todo el menú</button>
+        </div>
+      }
+      <p class="pie-carta">Precios del local; en Rappi y Uber Eats pueden ser distintos. Si tienes alguna alergia, avísanos al pedir.</p>
+    </div>
+  </div>
+</main>

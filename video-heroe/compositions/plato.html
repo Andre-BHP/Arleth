@@ -1,0 +1,29 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0a2a40; }
+    #plato-foto {
+      position: absolute; left: 0; top: 0; width: 1440px; height: 960px;
+      object-fit: cover;
+    }
+    #plato-luz {
+      position: absolute; inset: -20%;
+      background: radial-gradient(38% 30% at 50% 50%, rgba(255, 244, 214, 0.22), rgba(255, 244, 214, 0) 70%);
+      mix-blend-mode: soft-light;
+    }
+  </style>
+  <div id="root" data-composition-id="plato" data-width="1440" data-height="960">
+    <img id="plato-foto" class="clip" src="assets/aguachile-negro.jpg" alt="" data-start="0" data-duration="8" data-track-index="1" />
+    <div id="plato-luz" class="clip" data-start="0" data-duration="8" data-track-index="2"></div>
+  </div>
+  <script>
+    // Bucle limpio: el fotograma 8 s es igual al 0 s (ida y vuelta simétrica).
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#plato-foto", { scale: 1.04, xPercent: -1.2, yPercent: 0.6, rotation: -0.4 },
+      { scale: 1.12, xPercent: 1.6, yPercent: -0.8, rotation: 0.3, duration: 4, ease: "sine.inOut" }, 0);
+    tl.to("#plato-foto", { scale: 1.04, xPercent: -1.2, yPercent: 0.6, rotation: -0.4, duration: 4, ease: "sine.inOut" }, 4);
+    tl.fromTo("#plato-luz", { xPercent: -14, yPercent: 6, opacity: 0.6 },
+      { xPercent: 12, yPercent: -4, opacity: 1, duration: 4, ease: "sine.inOut" }, 0);
+    tl.to("#plato-luz", { xPercent: -14, yPercent: 6, opacity: 0.6, duration: 4, ease: "sine.inOut" }, 4);
+    window.__timelines["plato"] = tl;
+  </script>
+</template>

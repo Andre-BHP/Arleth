@@ -1,0 +1,289 @@
+{
+  "fuente": "Transcripción de las imágenes de https://www.bocadelcielogdl.com/menu (2026-11-13). Precios en el local, MXN.",
+  "nota": "Todos los platillos se elaboran al momento.",
+  "notasInternas": "La evidencia de cada favorito es para el restaurante y no se muestra en pantalla. El 94 % de 68 calificaciones en Uber Eats del taco gobernador corresponde a la sucursal Tlaquepaque, no a Chapultepec; por eso no se usa. El gobernador sale de favoritos hasta tener su foto.",
+  "favoritos": [
+    { "id": "aguachile-negro", "rango": 1, "evidencia": "El más citado en reseñas de Wanderlog y Google; imprescindible en TripAdvisor." },
+    { "id": "ceviche-pescado-cielo", "rango": 2, "evidencia": "Time Out destaca su agridulce de mango y manzana; favorito en TripAdvisor." },
+    { "id": "taco-tripita-calamar", "rango": 3, "evidencia": "Time Out: crujiente y bien sazonado; Wanderlog lo marca como especialidad.", "cita": { "texto": "Crujiente y bien sazonado", "fuente": "Time Out" } },
+    { "id": "taco-carnitas-atun", "rango": 4, "evidencia": "Recomendado por locales en Airbnb y TripAdvisor.", "cita": { "texto": "Los tacos de atún son lo mejor", "fuente": "Reseña en TripAdvisor" } },
+    { "id": "atun-fresco", "rango": 5, "evidencia": "Reseñas de TripAdvisor.", "cita": { "texto": "Las tostadas de atún son soberbias", "fuente": "Reseña en TripAdvisor" } }
+  ],
+  "categorias": [
+    {
+      "id": "entradas", "nombre": "Entradas", "titulo": "Entradas para compartir",
+      "secciones": [{ "items": [
+        { "id": "tiradito-salsas-negras", "nombre": "Tiradito de atún en salsas negras", "desc": "200 g. Láminas de atún fresco con un toque de dijón, arúgula, aguacate y salsas negras de la casa.", "precios": [{ "t": "Orden", "v": 186 }], "tags": ["crudo"], "foto": "tiradito" },
+        { "id": "tiradito-tropical", "nombre": "Tiradito de atún tropical", "desc": "200 g. Láminas de atún en costra de ajonjolí, bañado en salsa cítrica con ensalada tropical y naranja.", "precios": [{ "t": "Orden", "v": 186 }], "tags": ["nuevo", "crudo"] },
+        { "id": "aguachile-tricolor", "nombre": "Aguachile tricolor de camarón", "desc": "Aguachile verde, negro y tatemado.", "precios": [{ "t": "Orden", "v": 200 }], "tags": ["picante", "crudo"] },
+        { "id": "chicharron-pescado-entrada", "nombre": "Chicharrón de pescado", "desc": "Al mojo de ajo, barbecue, diabla o natural; con papas.", "precios": [{ "t": "Orden", "v": 160 }], "tags": [] },
+        { "id": "carnitas-atun-entrada", "nombre": "Carnitas de atún", "desc": "Montadas en guacamole para botanear.", "precios": [{ "t": "Orden", "v": 178 }], "tags": [] },
+        { "id": "palomitas-camaron", "nombre": "Palomitas de camarón", "desc": "Trozos de camarón empanizados con papas.", "precios": [{ "t": "Orden", "v": 167 }], "tags": [] }
+      ]}]
+    },
+    {
+      "id": "tortugas", "nombre": "Tortugas", "titulo": "Tortugas y mantarrayas",
+      "nota": "Tortuga: tostada doradita de maíz con el guiso de tu elección, gratinada con queso. Mantarraya: costra de queso sobre tortilla de harina o maíz con el guiso que elijas.",
+      "secciones": [{ "items": [
+        { "id": "tortuga-marlin", "nombre": "Marlín", "precios": [{ "t": "Pieza", "v": 55 }, { "t": "Orden de 3", "v": 145 }], "tags": [] },
+        { "id": "tortuga-pulpo", "nombre": "Pulpo", "precios": [{ "t": "Pieza", "v": 66 }, { "t": "Orden de 3", "v": 178 }], "tags": [] },
+        { "id": "tortuga-camaron", "nombre": "Camarón", "precios": [{ "t": "Pieza", "v": 62 }, { "t": "Orden de 3", "v": 160 }], "tags": [], "foto": "tortuga" }
+      ]}]
+    },
+    {
+      "id": "tacos", "nombre": "Tacos", "titulo": "Tacos",
+      "secciones": [{ "items": [
+        { "id": "taco-chicharron-pescado", "nombre": "Chicharrón de pescado", "desc": "Cubos de pescado frito.", "precios": [{ "t": "Pieza", "v": 39 }, { "t": "Orden de 3", "v": 102 }], "tags": [] },
+        { "id": "taco-marlin", "nombre": "Marlín blando o dorado", "desc": "Marlín con zanahorias y chícharos, adobado con chipotle.", "precios": [{ "t": "Pieza", "v": 40 }, { "t": "Orden de 3", "v": 104 }], "tags": [] },
+        { "id": "taco-pulpo-guajillo", "nombre": "Pulpo al guajillo blando o dorado", "desc": "Pulpo guisado con ajo, chile guajillo y champiñones.", "precios": [{ "t": "Pieza", "v": 55 }, { "t": "Orden de 3", "v": 145 }], "tags": [] },
+        { "id": "taco-carnitas-atun", "nombre": "Carnitas de atún", "desc": "Cubitos de atún sellados con el adobo de la casa.", "precios": [{ "t": "Pieza", "v": 46 }, { "t": "Orden de 3", "v": 125 }], "tags": [], "foto": "carnitas-atun" },
+        { "id": "taco-barbacoa-jaiba", "nombre": "Doradito de barbacoa de jaiba", "desc": "Receta de la casa, con cebollitas guisadas.", "precios": [{ "t": "Pieza", "v": 40 }, { "t": "Orden de 3", "v": 104 }], "tags": [] },
+        { "id": "taco-pulpo-chicharron", "nombre": "Pulpo y chicharrón en salsa verde", "desc": "Pulpo con chicharrón de puerco en salsa verde.", "precios": [{ "t": "Pieza", "v": 50 }, { "t": "Orden de 3", "v": 138 }], "tags": [] },
+        { "id": "taco-tripita-calamar", "nombre": "Tripita de calamar", "desc": "Calamar baby frito.", "precios": [{ "t": "Pieza", "v": 42 }, { "t": "Orden de 3", "v": 112 }], "tags": [], "foto": "taco-calamar-recorte" },
+        { "id": "taco-gobernador", "nombre": "Doradito gobernador", "desc": "Guiso de camarón, chile poblano y queso.", "precios": [{ "t": "Pieza", "v": 50 }, { "t": "Orden de 3", "v": 138 }], "tags": [] },
+        { "id": "taco-atun-sellado", "nombre": "Atún sellado", "desc": "En tortilla de harina con aderezo de chipotle, salsa mexicana, martajada y aguacate.", "precios": [{ "t": "Pieza", "v": 50 }, { "t": "Orden de 3", "v": 138 }], "tags": [] },
+        { "id": "taco-torito-marlin", "nombre": "Torito de marlín", "desc": "Chile güero relleno de marlín en costra de queso.", "precios": [{ "t": "Pieza", "v": 57 }, { "t": "Orden de 3", "v": 145 }], "tags": [] },
+        { "id": "taco-camaron-capeado", "nombre": "Camarón capeado", "desc": "Camarón capeado, receta de la casa.", "precios": [{ "t": "Pieza", "v": 42 }, { "t": "Orden de 3", "v": 110 }], "tags": [] },
+        { "id": "taco-pescado-capeado", "nombre": "Pescado capeado", "desc": "Tiras de pescado capeadas.", "precios": [{ "t": "Pieza", "v": 35 }, { "t": "Orden de 3", "v": 96 }], "tags": [] }
+      ]}]
+    },
+    {
+      "id": "tostadas", "nombre": "Tostadas", "titulo": "Tostadas, ceviches y aguachiles",
+      "secciones": [{ "items": [
+        { "id": "ceviche-pescado-clasico", "nombre": "Ceviche de pescado clásico", "desc": "Jitomate, cebolla, pepino, cilantro, aguacate y pescado macerado.", "precios": [{ "t": "Tostada", "v": 48 }, { "t": "Media", "v": 102 }, { "t": "Orden", "v": 162 }], "tags": ["crudo"] },
+        { "id": "ceviche-camaron-clasico", "nombre": "Ceviche de camarón clásico", "desc": "Jitomate, cebolla, pepino, cilantro, aguacate y camarón macerado.", "precios": [{ "t": "Tostada", "v": 60 }, { "t": "Media", "v": 126 }, { "t": "Orden", "v": 200 }], "tags": ["crudo"] },
+        { "id": "ceviche-pescado-cielo", "nombre": "Ceviche de pescado del cielo", "desc": "Con manzana verde, mango, chile en polvo y siracha.", "precios": [{ "t": "Tostada", "v": 52 }, { "t": "Media", "v": 112 }, { "t": "Orden", "v": 185 }], "tags": ["picante", "crudo"], "foto": "ceviche-cielo" },
+        { "id": "ceviche-camaron-cielo", "nombre": "Ceviche de camarón del cielo", "desc": "Con jícama, pepino, zanahoria rallada, chile en polvo y siracha.", "precios": [{ "t": "Tostada", "v": 60 }, { "t": "Media", "v": 126 }, { "t": "Orden", "v": 200 }], "tags": ["picante", "crudo"] },
+        { "id": "ceviche-pulpo", "nombre": "Ceviche de pulpo", "desc": "Jitomate, cebolla, pepino, cilantro, aguacate, aceite de olivo y mejorana.", "precios": [{ "t": "Tostada", "v": 70 }, { "t": "Media", "v": 142 }, { "t": "Orden", "v": 230 }], "tags": [] },
+        { "id": "aguachile-negro", "nombre": "Aguachile negro de camarón", "desc": "Chile de árbol tatemado y salsas negras sobre pepino y guacamole.", "precios": [{ "t": "Tostada", "v": 64 }, { "t": "Media", "v": 132 }, { "t": "Orden", "v": 210 }], "tags": ["picante", "crudo"], "foto": "aguachile-negro" },
+        { "id": "aguachile-tatemado", "nombre": "Aguachile tatemado de camarón", "desc": "Tomate milpero tatemado y chiles sobre pepino y guacamole.", "precios": [{ "t": "Tostada", "v": 64 }, { "t": "Media", "v": 132 }, { "t": "Orden", "v": 210 }], "tags": ["picante", "crudo"] },
+        { "id": "aguachile-verde", "nombre": "Aguachile verde de camarón", "desc": "Pepino y chile serrano.", "precios": [{ "t": "Tostada", "v": 60 }, { "t": "Media", "v": 126 }, { "t": "Orden", "v": 200 }], "tags": ["picante", "crudo"] },
+        { "id": "tostada-marlin-cielo", "nombre": "Marlín del cielo", "desc": "Marlín con zanahorias y chícharos, adobado con chipotle.", "precios": [{ "t": "Tostada", "v": 60 }, { "t": "Media", "v": 126 }, { "t": "Orden", "v": 200 }], "tags": [] },
+        { "id": "ceviche-rojo", "nombre": "Ceviche rojo", "desc": "Pescado, camarón y pulpo con jitomate, pepino, cilantro, manzana y mango en clamato y salsas negras.", "precios": [{ "t": "Tostada", "v": 70 }, { "t": "Media", "v": 142 }, { "t": "Orden", "v": 230 }], "tags": ["crudo"] },
+        { "id": "pulpo-especial", "nombre": "Pulpo especial", "desc": "Pulpo sobre aguacate con pepino, cebolla morada, aderezo chipotle y aceite de chiles.", "precios": [{ "t": "Tostada", "v": 82 }, { "t": "Media", "v": 162 }, { "t": "Orden", "v": 248 }], "tags": ["nuevo"], "foto": "tostada-pulpo-recorte" },
+        { "id": "atun-fresco", "nombre": "Atún fresco", "desc": "Láminas de atún con salsas negras, aderezo chipotle, aguacate y chile serrano.", "precios": [{ "t": "Tostada", "v": 60 }, { "t": "Media", "v": 126 }, { "t": "Orden", "v": 200 }], "tags": ["picante", "crudo"], "foto": "atun-fresco" },
+        { "id": "atun-tropical", "nombre": "Atún tropical", "desc": "Cubitos de atún con ensalada tropical en salsa ponzu, aderezo chipotle y ajonjolí negro.", "precios": [{ "t": "Tostada", "v": 70 }, { "t": "Media", "v": 142 }, { "t": "Orden", "v": 230 }], "tags": ["nuevo", "crudo"] }
+      ]}]
+    },
+    {
+      "id": "cocteles", "nombre": "Cócteles", "titulo": "Cócteles y caldos",
+      "secciones": [{ "items": [
+        { "id": "coctel-camaron", "nombre": "Cóctel de camarón", "desc": "Pepino, jitomate, cebolla, cilantro, aguacate y caldo de camarón con clamato.", "precios": [{ "t": "Mediano", "v": 120 }, { "t": "Grande", "v": 192 }], "tags": [] },
+        { "id": "coctel-pulpo", "nombre": "Cóctel de pulpo", "desc": "Pepino, jitomate, cebolla, cilantro, aguacate y caldo de camarón con clamato.", "precios": [{ "t": "Mediano", "v": 149 }, { "t": "Grande", "v": 238 }], "tags": [] },
+        { "id": "coctel-mixto", "nombre": "Cóctel mixto", "desc": "Camarón y pulpo.", "precios": [{ "t": "Mediano", "v": 132 }, { "t": "Grande", "v": 214 }], "tags": [] },
+        { "id": "consome-camaron", "nombre": "Consomé de camarón", "desc": "Caldo de camarón con un toque picosito.", "precios": [{ "t": "Mediano", "v": 120 }, { "t": "Grande", "v": 192 }], "tags": ["picante"] },
+        { "id": "sopa-marinera", "nombre": "Sopa marinera", "desc": "Pescado, camarón, pulpo y mejillones.", "precios": [{ "t": "Mediano", "v": 120 }, { "t": "Grande", "v": 192 }], "tags": [] }
+      ]}]
+    },
+    {
+      "id": "platillos", "nombre": "Platillos", "titulo": "Platillos",
+      "nota": "Incluyen arroz, ensalada y elote amarillo o papas a la francesa. Preparaciones a elegir (varía por platillo): al grill, zarandeado, guajillo, a la plancha, mantequilla, diabla, barbecue, mojo de ajo, tamarindo, coco, chipotle-frambuesa, empanizado, al vapor, cucaracha o endiablados.",
+      "secciones": [{ "items": [
+        { "id": "platillo-camarones", "nombre": "Camarones", "desc": "120 g la media orden, 240 g la orden.", "precios": [{ "t": "Media", "v": 152 }, { "t": "Orden", "v": 218 }], "tags": [] },
+        { "id": "platillo-pulpo", "nombre": "Pulpo", "desc": "120 g la media orden, 240 g la orden. También frito.", "precios": [{ "t": "Media", "v": 168 }, { "t": "Orden", "v": 240 }], "tags": [], "foto": "pulpo-brasas-recorte" },
+        { "id": "platillo-filete", "nombre": "Filete de pescado", "desc": "120 g la media orden, 240 g la orden.", "precios": [{ "t": "Media", "v": 138 }, { "t": "Orden", "v": 200 }], "tags": [] },
+        { "id": "platillo-medallon-atun", "nombre": "Medallón de atún", "desc": "200 g. Estilo Boca: costra de ajonjolí, arúgula, aguacate, dijón y soya.", "precios": [{ "t": "Orden", "v": 200 }], "tags": [] },
+        { "id": "platillo-salmon", "nombre": "Salmón", "desc": "200 g. También en salsa de soya y limón o finas hierbas.", "precios": [{ "t": "Orden", "v": 220 }], "tags": [] },
+        { "id": "ballena", "nombre": "Ballena", "desc": "Camarones empanizados en tortilla de harina gigante con aguacate, lechuga y jitomate, en salsa especial de jitomate.", "precios": [{ "t": "Orden", "v": 138 }], "tags": [] }
+      ]}]
+    },
+    {
+      "id": "ensaladas", "nombre": "Ensaladas", "titulo": "Ensaladas de la casa",
+      "nota": "Lechugas, pepino, jitomate cherry, zanahoria, col morada, pimiento y aguacate.",
+      "secciones": [{ "items": [
+        { "id": "ensalada-camaron", "nombre": "Camarón a la plancha", "desc": "120 g / 240 g.", "precios": [{ "t": "Media", "v": 138 }, { "t": "Orden", "v": 200 }], "tags": [] },
+        { "id": "ensalada-atun", "nombre": "Atún sellado", "desc": "100 g / 200 g.", "precios": [{ "t": "Media", "v": 130 }, { "t": "Orden", "v": 186 }], "tags": [] },
+        { "id": "ensalada-filete", "nombre": "Filete de pescado", "desc": "120 g / 240 g.", "precios": [{ "t": "Media", "v": 130 }, { "t": "Orden", "v": 186 }], "tags": [] },
+        { "id": "ensalada-salmon", "nombre": "Salmón a la plancha", "desc": "100 g / 200 g.", "precios": [{ "t": "Media", "v": 138 }, { "t": "Orden", "v": 200 }], "tags": [] }
+      ]}]
+    },
+    {
+      "id": "tortas", "nombre": "Tortas", "titulo": "Torta ahogada",
+      "nota": "Pídela zarandeada en salsa diabla.",
+      "secciones": [{ "items": [
+        { "id": "torta-camaron", "nombre": "Torta ahogada de camarón", "precios": [{ "t": "Pieza", "v": 90 }], "tags": [] },
+        { "id": "torta-carnitas-atun", "nombre": "Torta ahogada de carnitas de atún", "precios": [{ "t": "Pieza", "v": 92 }], "tags": [] }
+      ]}]
+    },
+    {
+      "id": "empanadas", "nombre": "Empanadas", "titulo": "Empanadas",
+      "nota": "Con arroz. Con queso: +$10 la pieza, +$30 la orden.",
+      "secciones": [{ "items": [
+        { "id": "empanada-camaron", "nombre": "Camarón guisado", "precios": [{ "t": "Pieza", "v": 55 }, { "t": "Orden", "v": 148 }], "tags": [] },
+        { "id": "empanada-marlin", "nombre": "Marlín del cielo", "precios": [{ "t": "Pieza", "v": 50 }, { "t": "Orden", "v": 138 }], "tags": [] },
+        { "id": "empanada-pulpo", "nombre": "Pulpo al guajillo", "precios": [{ "t": "Pieza", "v": 60 }, { "t": "Orden", "v": 164 }], "tags": [] }
+      ]}]
+    },
+    {
+      "id": "hamburguesas", "nombre": "Hamburguesas", "titulo": "Hamburguesas",
+      "nota": "Con papas a la francesa.",
+      "secciones": [{ "items": [
+        { "id": "hamburguesa-camaron", "nombre": "Camarón", "precios": [{ "t": "Pieza", "v": 145 }], "tags": [] },
+        { "id": "hamburguesa-pescado", "nombre": "Pescado empanizado", "precios": [{ "t": "Pieza", "v": 126 }], "tags": [] },
+        { "id": "hamburguesa-res", "nombre": "Res", "precios": [{ "t": "Pieza", "v": 138 }], "tags": [] }
+      ]}]
+    },
+    {
+      "id": "ninos", "nombre": "Niños", "titulo": "Menú niños y extras",
+      "secciones": [
+        { "titulo": "Niños", "items": [
+          { "id": "ninos-dedos", "nombre": "Dedos de pescado", "desc": "120 g, con papas y arroz.", "precios": [{ "t": "Orden", "v": 129 }], "tags": ["ninos"] },
+          { "id": "ninos-filetito", "nombre": "Filetito empanizado", "desc": "120 g, con papas y arroz.", "precios": [{ "t": "Orden", "v": 129 }], "tags": ["ninos"] }
+        ]},
+        { "titulo": "Extras", "items": [
+          { "id": "extra-arroz", "nombre": "Arroz", "precios": [{ "t": "", "v": 20 }], "tags": [] },
+          { "id": "extra-aguacate", "nombre": "Aguacate", "precios": [{ "t": "", "v": 30 }], "tags": [] },
+          { "id": "extra-pan", "nombre": "Pan con mantequilla", "precios": [{ "t": "", "v": 25 }], "tags": [] },
+          { "id": "extra-ensalada", "nombre": "Ensalada sencilla", "precios": [{ "t": "", "v": 40 }], "tags": [] },
+          { "id": "extra-elote", "nombre": "Elote amarillo", "precios": [{ "t": "", "v": 30 }], "tags": [] },
+          { "id": "extra-salsa", "nombre": "Salsa extra 2 oz", "desc": "Tamarindo, diabla, chipotle-frambuesa o BBQ.", "precios": [{ "t": "", "v": 20 }], "tags": [] }
+        ]}
+      ]
+    },
+    {
+      "id": "bebidas", "nombre": "Bebidas", "titulo": "Bebidas",
+      "secciones": [
+        { "titulo": "Sin alcohol", "items": [
+          { "id": "agua-dia", "nombre": "Agua del día", "desc": "Fruta de temporada.", "precios": [{ "t": "Chica", "v": 38 }, { "t": "Grande", "v": 55 }], "tags": ["ninos"] },
+          { "id": "limonada-sencilla", "nombre": "Limonada sencilla", "desc": "Mineral con hierbabuena.", "precios": [{ "t": "Chica", "v": 42 }, { "t": "Grande", "v": 64 }], "tags": ["ninos"] },
+          { "id": "limonada-especial", "nombre": "Limonada especial", "desc": "Moras, maracuyá o guanábana.", "precios": [{ "t": "Chica", "v": 50 }, { "t": "Grande", "v": 82 }], "tags": ["ninos"] },
+          { "id": "naranjada", "nombre": "Naranjada sencilla", "desc": "Con hierbabuena.", "precios": [{ "t": "Chica", "v": 42 }, { "t": "Grande", "v": 64 }], "tags": ["ninos"] },
+          { "id": "frappe", "nombre": "Frappé", "desc": "Moras, o pepino con hierbabuena.", "precios": [{ "t": "Chica", "v": 50 }, { "t": "Grande", "v": 82 }], "tags": ["ninos"] },
+          { "id": "naranjada-maracuya", "nombre": "Naranjada con maracuyá", "precios": [{ "t": "Chica", "v": 50 }, { "t": "Grande", "v": 82 }], "tags": ["ninos"] },
+          { "id": "refresco", "nombre": "Refresco 355 ml", "desc": "Coca-Cola, Coca-Cola Light, Manzana, Fanta, Sprite, Fresca o agua mineral.", "precios": [{ "t": "", "v": 38 }], "tags": [] },
+          { "id": "boing", "nombre": "Jugo Boing 355 ml", "desc": "Mango, guayaba o fresa.", "precios": [{ "t": "", "v": 38 }], "tags": ["ninos"] },
+          { "id": "agua-embotellada", "nombre": "Agua embotellada 355 ml", "precios": [{ "t": "", "v": 30 }], "tags": [] },
+          { "id": "cafe-americano", "nombre": "Café americano o espresso", "precios": [{ "t": "", "v": 36 }], "tags": [] },
+          { "id": "cafe-capuchino", "nombre": "Capuchino o latte", "precios": [{ "t": "", "v": 46 }], "tags": [] },
+          { "id": "canijilla", "nombre": "Canijilla", "desc": "Espresso con Baileys.", "precios": [{ "t": "", "v": 88 }], "tags": [] }
+        ]},
+        { "titulo": "Cervezas", "items": [
+          { "id": "cerveza-nacional", "nombre": "Corona, Victoria, Pacífico, Indio, XX y similares", "desc": "355 ml.", "precios": [{ "t": "", "v": 38 }], "tags": [] },
+          { "id": "cerveza-bohemia", "nombre": "Bohemia, Modelo Especial, Negra Modelo", "desc": "355 ml.", "precios": [{ "t": "", "v": 44 }], "tags": [] },
+          { "id": "cerveza-importada", "nombre": "Heineken, Michelob Ultra, Stella Artois", "desc": "355 ml.", "precios": [{ "t": "", "v": 64 }], "tags": [] },
+          { "id": "cerveza-artesanal", "nombre": "Minerva, Colimita, Páramo, Cayaco, Piedra Lisa", "desc": "355 ml.", "precios": [{ "t": "", "v": 72 }], "tags": ["artesanal"] },
+          { "id": "caguama", "nombre": "Caguama Carta Blanca, Corona o Pacífico", "desc": "940 ml a 1 L.", "precios": [{ "t": "", "v": 82 }], "tags": [] },
+          { "id": "caguama-miller", "nombre": "Caguama Miller", "desc": "946 ml.", "precios": [{ "t": "", "v": 99 }], "tags": [] },
+          { "id": "cubeta", "nombre": "Cubeta de 8 cuartitos Coronita", "desc": "210 ml c/u.", "precios": [{ "t": "", "v": 132 }], "tags": [] }
+        ]},
+        { "titulo": "Preparados con cerveza", "items": [
+          { "id": "rusa", "nombre": "Rusa", "precios": [{ "t": "", "v": 50 }], "tags": [] },
+          { "id": "michelada", "nombre": "Michelada", "precios": [{ "t": "", "v": 68 }], "tags": [], "favoritaBebida": true },
+          { "id": "michelada-fruta", "nombre": "Michelada con fruta", "precios": [{ "t": "", "v": 82 }], "tags": [] },
+          { "id": "michelada-camarones", "nombre": "Michelada con camarones", "precios": [{ "t": "", "v": 109 }], "tags": [] },
+          { "id": "michelada-fruta-camarones", "nombre": "Michelada con fruta y camarones", "precios": [{ "t": "", "v": 127 }], "tags": [] },
+          { "id": "clamato-virgen", "nombre": "Clamato virgen", "precios": [{ "t": "", "v": 58 }], "tags": [] },
+          { "id": "cantarito", "nombre": "Cantarito", "desc": "1 L.", "precios": [{ "t": "", "v": 99 }], "tags": [] },
+          { "id": "vampiro", "nombre": "Vampiro", "desc": "1 L.", "precios": [{ "t": "", "v": 99 }], "tags": [] }
+        ]},
+        { "titulo": "Vinos Vista Mar Brisa", "items": [
+          { "id": "vino-copa", "nombre": "Merlot, Chardonnay, Sauvignon Blanc o Rosé", "desc": "Copa de 180 ml.", "precios": [{ "t": "Copa", "v": 86 }, { "t": "Botella", "v": 360 }], "tags": [] },
+          { "id": "vino-botella", "nombre": "Carménère o Cabernet Sauvignon", "desc": "Botella de 750 ml.", "precios": [{ "t": "Botella", "v": 360 }], "tags": [] },
+          { "id": "cocteles-vino", "nombre": "Cócteles con vino", "desc": "Aperol Spritz, Tinto Summer, sangría tinta o blanca.", "precios": [{ "t": "", "v": 89 }], "tags": [] }
+        ]},
+        { "titulo": "Cócteles", "items": [
+          { "id": "mojitos", "nombre": "Mojitos", "desc": "Moras, maracuyá y naranja, coco-guanábana, pepino y sandía, jengibre y limón.", "precios": [{ "t": "", "v": 86 }], "tags": [], "favoritaBebida": true },
+          { "id": "coolers", "nombre": "Coolers", "desc": "Fruta fresca, licor de frutas y vodka: fresa, manzana, sandía, moras o pepino-limón.", "precios": [{ "t": "", "v": 86 }], "tags": [] },
+          { "id": "gin-tonic", "nombre": "Gin tonic", "desc": "Manzana-canela, pepino y romero, moras-hierbabuena, toronja-cardamomo o jengibre-limón. También a tu gusto con especias y fruta.", "precios": [{ "t": "", "v": 99 }], "tags": [] },
+          { "id": "frappes-coctel", "nombre": "Daiquirí de fresa, margarita de mango o piña colada", "desc": "Frappé.", "precios": [{ "t": "", "v": 86 }], "tags": [] },
+          { "id": "frappes-especiales", "nombre": "Moras mezcal o pepín gin", "desc": "Frappé.", "precios": [{ "t": "", "v": 99 }], "tags": [] },
+          { "id": "carajillos", "nombre": "Carajillos", "desc": "Clásico con Licor 43, alemán, café bombón o tropical.", "precios": [{ "t": "", "v": 88 }], "tags": [] }
+        ]}
+      ]
+    },
+    {
+      "id": "destilados", "nombre": "Destilados", "titulo": "Destilados",
+      "nota": "Copa de 1.5 oz (45 ml); no incluye mezclador. Marcados como artesanal: producción nacional.",
+      "secciones": [
+        { "titulo": "Tequila", "items": [
+          { "id": "centinela-clasico", "nombre": "Centinela Clásico blanco o reposado", "precios": [{ "t": "", "v": 28 }], "tags": [] },
+          { "id": "centinela-1904-blanco", "nombre": "Centinela 1904 Blanco", "precios": [{ "t": "", "v": 46 }], "tags": [] },
+          { "id": "centinela-1904-reposado", "nombre": "Centinela 1904 Reposado", "precios": [{ "t": "", "v": 56 }], "tags": [] },
+          { "id": "centinela-1904-anejo", "nombre": "Centinela 1904 Añejo", "precios": [{ "t": "", "v": 72 }], "tags": [] },
+          { "id": "centinela-cristalino", "nombre": "Centinela Cristalino Extra Añejo", "precios": [{ "t": "", "v": 98 }], "tags": [] },
+          { "id": "7-leguas", "nombre": "7 Leguas Blanco", "precios": [{ "t": "", "v": 58 }], "tags": [] },
+          { "id": "don-julio-70", "nombre": "Don Julio 70", "precios": [{ "t": "", "v": 102 }], "tags": [] },
+          { "id": "cascahuin-blanco", "nombre": "Cascahuín Blanco", "precios": [{ "t": "", "v": 50 }], "tags": ["artesanal"] },
+          { "id": "cascahuin-reposado", "nombre": "Cascahuín Reposado", "precios": [{ "t": "", "v": 54 }], "tags": ["artesanal"] },
+          { "id": "cascahuin-anejo", "nombre": "Cascahuín Añejo", "precios": [{ "t": "", "v": 74 }], "tags": ["artesanal"] },
+          { "id": "cascahuin-tahona", "nombre": "Cascahuín Tahona", "precios": [{ "t": "", "v": 100 }], "tags": ["artesanal"] },
+          { "id": "fortaleza-blanco", "nombre": "Fortaleza Blanco", "precios": [{ "t": "", "v": 75 }], "tags": ["artesanal"] },
+          { "id": "fortaleza-reposado", "nombre": "Fortaleza Reposado", "precios": [{ "t": "", "v": 86 }], "tags": ["artesanal"] },
+          { "id": "fortaleza-anejo", "nombre": "Fortaleza Añejo", "precios": [{ "t": "", "v": 118 }], "tags": ["artesanal"] }
+        ]},
+        { "titulo": "Mezcal, sotol, raicilla y bacanora", "items": [
+          { "id": "la-costumbre", "nombre": "La Costumbre Espadín (Oaxaca)", "precios": [{ "t": "", "v": 32 }], "tags": ["artesanal"] },
+          { "id": "espina-negra", "nombre": "Espina Negra Espadín (Oaxaca)", "precios": [{ "t": "", "v": 52 }], "tags": ["artesanal"] },
+          { "id": "holbosh", "nombre": "Holbosh Pechuga (Oaxaca)", "precios": [{ "t": "", "v": 82 }], "tags": ["artesanal"] },
+          { "id": "ajal", "nombre": "Ajal Cenizo (Durango)", "precios": [{ "t": "", "v": 66 }], "tags": ["artesanal"] },
+          { "id": "agua-dulce", "nombre": "Agua Dulce Tobalá (Puebla)", "precios": [{ "t": "", "v": 66 }], "tags": ["artesanal"] },
+          { "id": "sotol", "nombre": "Sotol 5 Tragos Blanco (Chihuahua)", "precios": [{ "t": "", "v": 46 }], "tags": ["artesanal"] },
+          { "id": "raicilla", "nombre": "Raicilla Alicantes Costa Rhodacantha (Jalisco)", "precios": [{ "t": "", "v": 66 }], "tags": ["artesanal"] },
+          { "id": "bacanora", "nombre": "Bacanora Imperial (Sonora)", "precios": [{ "t": "", "v": 66 }], "tags": ["artesanal"] }
+        ]},
+        { "titulo": "Ron", "items": [
+          { "id": "bacardi", "nombre": "Bacardí Blanco", "precios": [{ "t": "", "v": 25 }], "tags": [] },
+          { "id": "malibu", "nombre": "Malibú", "precios": [{ "t": "", "v": 28 }], "tags": [] },
+          { "id": "havana-7", "nombre": "Havana Club 7 años", "precios": [{ "t": "", "v": 52 }], "tags": [] },
+          { "id": "aconte", "nombre": "Aconte Añejo 7 años (Michoacán)", "precios": [{ "t": "", "v": 64 }], "tags": ["artesanal"] },
+          { "id": "paranubes", "nombre": "Paranubes (Oaxaca)", "precios": [{ "t": "", "v": 64 }], "tags": ["artesanal"] }
+        ]},
+        { "titulo": "Whisky", "items": [
+          { "id": "passport", "nombre": "Passport", "precios": [{ "t": "", "v": 25 }], "tags": [] },
+          { "id": "red-label", "nombre": "Johnnie Walker Red Label", "precios": [{ "t": "", "v": 46 }], "tags": [] },
+          { "id": "jack-daniels", "nombre": "Jack Daniel's", "precios": [{ "t": "", "v": 52 }], "tags": [] },
+          { "id": "buchanans", "nombre": "Buchanan's 12", "precios": [{ "t": "", "v": 91 }], "tags": [] },
+          { "id": "glenfiddich", "nombre": "Glenfiddich 12", "precios": [{ "t": "", "v": 95 }], "tags": [] }
+        ]},
+        { "titulo": "Vodka y ginebra", "items": [
+          { "id": "smirnoff", "nombre": "Smirnoff", "precios": [{ "t": "", "v": 28 }], "tags": [] },
+          { "id": "absolut", "nombre": "Absolut Azul", "precios": [{ "t": "", "v": 34 }], "tags": [] },
+          { "id": "satvrnal", "nombre": "Satvrnal (Jalisco)", "precios": [{ "t": "", "v": 38 }], "tags": ["artesanal"] },
+          { "id": "grey-goose", "nombre": "Grey Goose", "precios": [{ "t": "", "v": 62 }], "tags": [] },
+          { "id": "gibsons", "nombre": "Gibson's", "precios": [{ "t": "", "v": 28 }], "tags": [] },
+          { "id": "bombay", "nombre": "Bombay", "precios": [{ "t": "", "v": 52 }], "tags": [] },
+          { "id": "de-juanita", "nombre": "De Juanita (Jalisco)", "precios": [{ "t": "", "v": 54 }], "tags": ["artesanal"] },
+          { "id": "fresco-77", "nombre": "Fresco 77 (CDMX)", "precios": [{ "t": "", "v": 87 }], "tags": ["artesanal"] },
+          { "id": "katun", "nombre": "Katún (Mérida)", "precios": [{ "t": "", "v": 92 }], "tags": ["artesanal"] }
+        ]},
+        { "titulo": "Brandy, cognac y licores", "items": [
+          { "id": "torres-10", "nombre": "Torres 10", "precios": [{ "t": "", "v": 42 }], "tags": [] },
+          { "id": "hennessy", "nombre": "Hennessy VSOP", "precios": [{ "t": "", "v": 126 }], "tags": [] },
+          { "id": "sangrita", "nombre": "Sangrita", "precios": [{ "t": "", "v": 24 }], "tags": [] },
+          { "id": "kahlua", "nombre": "Kahlúa", "precios": [{ "t": "", "v": 28 }], "tags": [] },
+          { "id": "jager", "nombre": "Jägermeister", "precios": [{ "t": "", "v": 38 }], "tags": [] },
+          { "id": "sambuca", "nombre": "Sambuca Nero", "precios": [{ "t": "", "v": 42 }], "tags": [] },
+          { "id": "baileys", "nombre": "Baileys", "precios": [{ "t": "", "v": 48 }], "tags": [] },
+          { "id": "licor-43", "nombre": "Licor 43", "precios": [{ "t": "", "v": 52 }], "tags": [] },
+          { "id": "ancho-reyes", "nombre": "Ancho Reyes (Puebla)", "precios": [{ "t": "", "v": 42 }], "tags": ["artesanal"] },
+          { "id": "siete-rayas", "nombre": "Siete Rayas (Puebla)", "precios": [{ "t": "", "v": 74 }], "tags": ["artesanal"] }
+        ]}
+      ]
+    }
+  ],
+  "enCasa": {
+    "nota": "Pedidos por WhatsApp. Precios de la lista para llevar; confirmarlos por WhatsApp.",
+    "grupos": [
+      { "titulo": "Listos para calentar", "items": [
+        { "nombre": "Camarón, docena", "desc": "Empanizado, diabla, mojo de ajo, guajillo, coco, zarandeado, mantequilla o plancha.", "v": 69 },
+        { "nombre": "Filete, 200 g", "desc": "Mismas preparaciones que el camarón.", "v": 67 },
+        { "nombre": "Pulpo, 200 g", "desc": "Diabla, mojo de ajo, guajillo, zarandeado, mantequilla o plancha.", "v": 98 }
+      ]},
+      { "titulo": "Guisos al vacío, 1 kg", "items": [
+        { "nombre": "Barbacoa de jaiba", "v": 144 },
+        { "nombre": "Marlín", "v": 164 },
+        { "nombre": "Machaca de mantarraya", "v": 173 },
+        { "nombre": "Pulpo con chicharrón", "v": 243 },
+        { "nombre": "Pulpo guajillo", "v": 285 }
+      ]},
+      { "titulo": "Salsas, 500 ml", "items": [
+        { "nombre": "Salsas negras", "v": 94 },
+        { "nombre": "Aguachile negro", "v": 97 },
+        { "nombre": "Soya con limón", "v": 77 },
+        { "nombre": "Aguachile tatemado", "v": 67 },
+        { "nombre": "Chipotle-frambuesa", "v": 47 },
+        { "nombre": "Ponzu", "v": 42 }
+      ]}
+    ]
+  }
+}

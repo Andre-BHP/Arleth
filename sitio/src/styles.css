@@ -1,0 +1,249 @@
+ /* Caveat Brush recortado a latín básico (ver herramientas/fuente-pincel.mjs). */
+@font-face {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../public/fuentes/caveat-brush-sub.woff2') format('woff2');
+}
+
+:root {
+  /* Color: madera azul + papel de menú + un acento */
+  --azul: #0f3a57;
+  --azul-hondo: #0a2a40;
+  --azul-veta: #164a6d;
+  --azul-texto: #c3d6e4;
+  --papel: #f6efe3;
+  --papel-2: #ece1cd;
+  --papel-borde: #d8c9ae;
+  --tinta: #13222d;
+  --tinta-2: #45535e;
+  --amarillo: #f5c518;
+  --chile: #a92e1c;
+  --verde-abierto: #1f7a4d;
+
+  /* Tipografía */
+  --f-nombre: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --f-pincel: 'Caveat Brush', cursive;
+  --f-texto: 'Archivo Variable', 'Archivo', system-ui, sans-serif;
+  --f-dato: 'Geist Mono Variable', ui-monospace, monospace;
+
+  --t-xs: 0.8125rem;
+  --t-s: 0.9375rem;
+  --t-m: 1.0625rem;
+  --t-l: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --t-xl: clamp(2rem, 1.5rem + 2.2vw, 3.25rem);
+  --t-xxl: clamp(3.25rem, 2rem + 6vw, 6rem);
+
+  /* Espaciado base 8 px */
+  --e-1: 0.25rem;
+  --e-2: 0.5rem;
+  --e-3: 1rem;
+  --e-4: 1.5rem;
+  --e-5: 2rem;
+  --e-6: 3rem;
+  --e-7: 4.5rem;
+  --e-8: 7rem;
+
+  --radio-s: 6px;
+  --radio-m: 14px;
+  --radio-l: 26px;
+
+  --sombra-papel: 0 1px 2px rgb(19 34 45 / 0.08), 0 8px 24px -10px rgb(19 34 45 / 0.25);
+  --sombra-alta: 0 2px 6px rgb(10 42 64 / 0.18), 0 24px 60px -20px rgb(10 42 64 / 0.55);
+
+  --ease-salida: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-entra-sale: cubic-bezier(0.65, 0, 0.35, 1);
+  --d-rapida: 150ms;
+  --d-media: 220ms;
+  --d-lenta: 420ms;
+
+  --ancho: 76rem;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+
+  /* Veta y fibra: mosaicos WebP con alfa (herramientas/texturas.mjs); la veta es provisional hasta tener foto de su madera. */
+  --veta: none;
+  --fibra: none;
+
+  color-scheme: light;
+  accent-color: var(--azul);
+}
+
+/* Las texturas llegan después de la carga (clase puesta en index.html): no compiten con la foto del héroe. */
+html.con-textura {
+  --veta: url('../public/texturas/veta.webp');
+  --fibra: url('../public/texturas/fibra.webp');
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+/* En la versión publicada el aviso fijo hace más alta la cabecera. */
+html:has(.aviso-demo) { scroll-padding-top: 7.25rem; }
+@media (max-width: 60rem) {
+  html:has(.indice) { scroll-padding-top: 8.5rem; }
+  /* Deja libre la barra fija de abajo. */
+  body { padding-bottom: calc(4.25rem + env(safe-area-inset-bottom)); }
+}
+
+body {
+  margin: 0;
+  background: var(--papel) var(--fibra);
+  color: var(--tinta);
+  font-family: var(--f-texto);
+  font-size: var(--t-m);
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+img, svg, video { display: block; max-width: 100%; }
+app-icono > svg { width: 1.2em; height: 1.2em; flex: none; }
+img { height: auto; }
+
+h1, h2, h3, h4 { margin: 0; line-height: 1; text-wrap: balance; font-weight: 400; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+
+button { font: inherit; color: inherit; }
+
+::selection { background: var(--amarillo); color: var(--azul-hondo); }
+
+:focus-visible {
+  outline: 3px solid var(--amarillo);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.sobre-papel :focus-visible, :where(.papel) :focus-visible { outline-color: var(--azul); }
+
+html { scrollbar-color: var(--azul) var(--papel-2); }
+
+.dato {
+  font-family: var(--f-dato);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.envoltura {
+  width: min(100% - 2 * var(--gutter), var(--ancho));
+  margin-inline: auto;
+}
+
+.pincel {
+  font-family: var(--f-pincel);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Trazo de pincel amarillo bajo una palabra */
+.subrayado {
+  position: relative;
+  white-space: nowrap;
+  z-index: 0;
+}
+.subrayado::after {
+  content: '';
+  position: absolute;
+  left: -0.08em;
+  right: -0.12em;
+  bottom: 0.02em;
+  height: 0.32em;
+  z-index: -1;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20' preserveAspectRatio='none'%3E%3Cpath d='M3 12c30-6 62-8 98-7 34 1 66 3 96 0-28 6-60 8-96 7-36-1-66 1-98 4z' fill='%23f5c518'/%3E%3Cpath d='M8 15c40-4 90-5 140-3' stroke='%23f5c518' stroke-width='3' fill='none' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+}
+
+/* Botones */
+.boton {
+  --alto: 3.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-height: var(--alto);
+  padding: 0 1.4em;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-family: var(--f-texto);
+  font-size: var(--t-m);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform var(--d-rapida) var(--ease-salida), background-color var(--d-media) var(--ease-salida), box-shadow var(--d-media) var(--ease-salida), color var(--d-media);
+  -webkit-tap-highlight-color: transparent;
+}
+.boton:active { transform: scale(0.97); }
+.boton svg { width: 1.2em; height: 1.2em; flex: none; }
+
+.boton-principal {
+  background: var(--amarillo);
+  color: var(--azul-hondo);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 0.4) inset, 0 6px 18px -6px rgb(245 197 24 / 0.6);
+}
+@media (hover: hover) {
+  .boton-principal:hover { background: #ffd43b; box-shadow: 0 1px 0 rgb(255 255 255 / 0.4) inset, 0 10px 26px -8px rgb(245 197 24 / 0.75); }
+}
+
+.boton-contorno {
+  border-color: currentColor;
+  background: transparent;
+}
+@media (hover: hover) {
+  .boton-contorno:hover { background: rgb(246 239 227 / 0.1); }
+  .papel .boton-contorno:hover { background: rgb(15 58 87 / 0.07); }
+}
+
+.boton-azul {
+  background: var(--azul);
+  color: var(--papel);
+}
+@media (hover: hover) {
+  .boton-azul:hover { background: var(--azul-veta); }
+}
+
+/* Secciones de madera azul y papel */
+.madera {
+  background-color: var(--azul);
+  background-image: var(--veta);
+  background-size: 600px 600px;
+  color: var(--papel);
+}
+.papel {
+  background-color: var(--papel);
+  background-image: var(--fibra);
+  color: var(--tinta);
+}
+
+.titulo-seccion {
+  font-family: var(--f-nombre);
+  font-size: var(--t-xl);
+  letter-spacing: 0.01em;
+  line-height: 0.95;
+}
+.titulo-seccion .pincel { font-size: 1.08em; }
+
+.solo-lector {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 220ms; }

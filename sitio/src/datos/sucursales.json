@@ -1,0 +1,24 @@
+{
+  "fuente": "https://www.bocadelcielogdl.com/sucursales y portada del menú, consultados el 2026-11-13",
+  "numeros": "Teléfonos y correo viven en src/entornos/numeros.ts para que la versión publicada no los incluya.",
+  "aviso": "El horario no coincide entre el sitio, Cylex, Rappi y Turismo GDL. Confirmar con el restaurante antes de publicar.",
+  "sucursales": [
+    {
+      "id": "chapultepec",
+      "nombre": "Chapultepec",
+      "direccion": "Calle Morelos 1548, Ladrón de Guevara, Americana",
+      "cp": "44600",
+      "ciudad": "Guadalajara",
+      "estado": "Jalisco",
+      "horario": [{ "dias": [2, 3, 4, 5, 6, 0], "abre": "11:30", "cierra": "18:30" }],
+      "horarioTexto": "Martes a domingo, 11:30 a 18:30",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=Boca+del+Cielo+Morelos+1548+Guadalajara"
+    }
+  ],
+  "contacto": {
+    "instagram": "https://instagram.com/bocadelcielogdl",
+    "facebook": "https://www.facebook.com/bocadelcielogdl",
+    "x": "https://x.com/boca_delcielo",
+    "pedidos": "http://bocadelcielo.mobi"
+  }
+}

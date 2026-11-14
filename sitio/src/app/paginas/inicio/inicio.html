@@ -1,0 +1,214 @@
+<main id="contenido">
+<!-- Héroe: la mesa de madera azul con el aguachile negro -->
+<section class="heroe madera" aria-labelledby="heroe-titulo">
+  <div class="envoltura heroe-rejilla">
+    <div class="heroe-texto">
+      <h1 id="heroe-titulo">
+        <span class="linea">El <span class="pincel subrayado">mar,</span></span>
+        <span class="linea">en Guadalajara</span>
+      </h1>
+      <p class="bajada">Aguachiles, ceviches y tacos de mariscos hechos al momento, en la colonia Americana.</p>
+      <div class="acciones">
+        <a class="boton boton-principal" [routerLink]="verMenu">Ver el menú <app-icono nombre="flecha" /></a>
+        <button type="button" class="boton boton-contorno" (click)="agregar(heroe)"><app-icono nombre="bolsa" /> Pedir este aguachile</button>
+      </div>
+      <p class="estado dato" aria-live="polite">
+        @if (horario(); as h) {
+          <span class="punto" [class.abierto]="h.abierto" aria-hidden="true"></span>{{ h.texto }}
+        } @else {
+          <span class="punto" aria-hidden="true"></span>{{ s.horarioTexto }}
+        }
+        <span class="sep" aria-hidden="true">·</span>
+        <a href="#sucursal">Morelos 1548</a>
+      </p>
+    </div>
+
+    <figure class="heroe-plato">
+      <div class="marco" [style.background-image]="lqip">
+        <app-foto nombre="aguachile-negro" [alt]="heroe.nombre" [prioridad]="true" tamanos="(min-width: 60rem) 58vw, calc(100vw - 2rem)" />
+        <video
+          class="heroe-video"
+          data-video-heroe
+          muted
+          loop
+          playsinline
+          preload="none"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <source data-src="video/heroe.webm" type="video/webm" />
+          <source data-src="video/heroe.mp4" type="video/mp4" />
+        </video>
+        <figcaption class="rotulo">
+          <span class="nombre-plato">{{ heroe.nombre }}</span>
+          <span class="dato">Tostada {{ pesos(heroe.precios[0].v) }} · media {{ pesos(heroe.precios[1].v) }} · orden {{ pesos(heroe.precios[2].v) }}</span>
+        </figcaption>
+      </div>
+      <app-sello class="heroe-sello" tipo="favorito" tamano="grande" />
+    </figure>
+  </div>
+</section>
+<app-ola color="var(--papel)" />
+
+  <section id="favoritos" class="papel" aria-labelledby="favoritos-titulo">
+    @defer (on immediate; hydrate on viewport) { <app-favoritos /> }
+  </section>
+
+  <!-- Bebidas: franja de frascos -->
+  <app-ola color="var(--azul)" [volteada]="true" />
+  <section class="bebidas madera" aria-labelledby="bebidas-titulo" data-franja>
+    <div class="bebidas-fijo">
+      <div class="envoltura bebidas-encabezado">
+        <h2 class="titulo-seccion" id="bebidas-titulo">Para refrescar</h2>
+        <p>Fruta fresca, hielo y frasco de vidrio. Los mojitos y las limonadas especiales son de lo más recomendado en reseñas.</p>
+      </div>
+      <ul class="franja" data-franja-pista>
+        @for (b of bebidas; track b.id) {
+          <li class="bebida">
+            <span class="bebida-foto">
+              <app-foto [nombre]="b.foto" [alt]="b.p.nombre + ' en frasco con la etiqueta de Boca del Cielo'" [anchos]="[320, 480]" [diferir]="true" tamanos="(min-width: 60rem) 16rem, 60vw" />
+            </span>
+            <h3>{{ b.p.nombre }}</h3>
+            <p>{{ b.detalle }}</p>
+            <div class="bebida-pie">
+              <p class="dato precio">
+                @for (pr of b.p.precios; track pr.t; let ultimo = $last) {
+                  @if (pr.t) { {{ pr.t }} }{{ pesos(pr.v) }}@if (!ultimo) { · }
+                }
+              </p>
+              <button type="button" class="agregar-chico" (click)="agregar(b.p)" [attr.aria-label]="'Agregar ' + b.p.nombre + ' al pedido'"><app-icono nombre="mas" /></button>
+            </div>
+          </li>
+        }
+        <li class="bebida bebida-mas">
+          <a routerLink="/menu" fragment="bebidas">
+            <span class="mas-titulo">Y mucho más</span>
+            <span>Cervezas, micheladas, vinos, cócteles y destilados de casa artesanal</span>
+            <app-icono nombre="flecha" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <app-ola color="var(--papel)" />
+
+  <!-- Novedades -->
+  <section class="novedades papel" aria-labelledby="novedades-titulo">
+    @defer (on immediate; hydrate on viewport) {
+    <div class="envoltura novedades-rejilla">
+      <div class="novedades-foto">
+        <app-foto nombre="tostada-pulpo-recorte" alt="Tostada de pulpo especial" tamanos="(min-width: 60rem) 45vw, calc(100vw - 2rem)" />
+        <app-sello class="novedades-sello" tipo="nuevo" tamano="grande" />
+      </div>
+      <div>
+        <h2 class="titulo-seccion" id="novedades-titulo">Recién salidos</h2>
+        <ul class="novedades-lista">
+          @for (n of novedades; track n.id) {
+            <li>
+              <div class="fila">
+                <h3>{{ n.nombre }}</h3>
+                <span class="relleno" aria-hidden="true"></span>
+                <span class="dato precio">{{ pesos(n.precios[0].v) }}</span>
+              </div>
+              <p>{{ n.desc }}</p>
+              <button type="button" class="pedir-fila" (click)="agregar(n)">Agregar al pedido <app-icono nombre="mas" /></button>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+    }
+  </section>
+
+  <!-- Menú rápido -->
+  <section class="rapido papel" aria-labelledby="rapido-titulo">
+    @defer (on immediate; hydrate on viewport) {
+    <div class="envoltura">
+      <div class="rapido-encabezado">
+        <h2 class="titulo-seccion" id="rapido-titulo">Todo el menú</h2>
+        <a class="boton boton-azul" routerLink="/menu">Abrir el menú completo <app-icono nombre="flecha" /></a>
+      </div>
+      <ul class="rapido-lista">
+        @for (c of categorias; track c.id) {
+          <li>
+            <a routerLink="/menu" [fragment]="c.id">
+              <span class="cat">{{ c.nombre }}</span>
+              <span class="dato cuenta">{{ c.total }} · desde {{ pesos(c.desde) }}</span>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+    }
+  </section>
+
+  <!-- En casa -->
+  <app-ola color="var(--azul)" />
+  <section class="en-casa madera" aria-labelledby="casa-titulo">
+    @defer (on immediate; hydrate on viewport) {
+    <div class="envoltura">
+      <div class="casa-encabezado">
+        <h2 class="titulo-seccion" id="casa-titulo">Boca del Cielo en casa</h2>
+        <p>Guisos al vacío, platillos listos para calentar y las salsas de la casa en frasco de medio litro. Se piden por WhatsApp.</p>
+        <a class="boton boton-contorno" [href]="k.hrefWhatsapp(casaNumero, casaMensaje)" (click)="k.alClicWhatsapp($event, casaMensaje)" target="_blank" rel="noopener"><app-icono nombre="whatsapp" /> @if (k.demo) { Pedir por WhatsApp } @else { Pedir al <span class="dato">{{ telCasa }}</span> }</a>
+      </div>
+      <div class="casa-grupos">
+        @for (g of enCasa.grupos; track g.titulo) {
+          <div class="grupo">
+            <h3>{{ g.titulo }}</h3>
+            <ul>
+              @for (i of g.items; track i.nombre) {
+                <li>
+                  <span class="nom">{{ i.nombre }}</span>
+                  <span class="relleno" aria-hidden="true"></span>
+                  <span class="dato">{{ pesos(i.v) }}</span>
+                  @if (i.desc) { <span class="det">{{ i.desc }}</span> }
+                </li>
+              }
+            </ul>
+          </div>
+        }
+      </div>
+      <p class="casa-nota">Precios de su lista para llevar; confírmalos al pedir.</p>
+    </div>
+    }
+  </section>
+  <app-ola color="var(--papel)" [volteada]="true" />
+
+  <!-- Sucursal -->
+  <section id="sucursal" class="sucursal papel" aria-labelledby="sucursal-titulo">
+    @defer (on immediate; hydrate on viewport) {
+    <div class="envoltura sucursal-rejilla">
+      <div class="sucursal-foto">
+        <app-foto nombre="tortuga-mesa" alt="Tortuga gratinada servida en la mesa de madera, con salsas y limones" tamanos="(min-width: 60rem) 45vw, calc(100vw - 2rem)" />
+      </div>
+      <div class="sucursal-texto">
+        <h2 class="titulo-seccion" id="sucursal-titulo">Ven a Chapultepec</h2>
+        <address>
+          {{ s.direccion }}<br />
+          C.P. {{ s.cp }}, {{ s.ciudad }}, {{ s.estado }}
+        </address>
+        <dl class="datos">
+          <div>
+            <dt><app-icono nombre="reloj" /> Horario</dt>
+            <dd class="dato">{{ s.horarioTexto }}</dd>
+          </div>
+          <div>
+            <dt><app-icono nombre="telefono" /> Teléfono</dt>
+            <dd class="dato"><a [href]="k.hrefTelefono(s.telefono)" (click)="k.alClicTelefono($event)">{{ k.telefonoVisible(s.telefono) }}</a></dd>
+          </div>
+        </dl>
+        @if (horario(); as h) {
+          <p class="ahora" [class.abierto]="h.abierto"><span class="punto" [class.abierto]="h.abierto" aria-hidden="true"></span>{{ h.texto }}</p>
+        }
+        <p class="tranquilo">Se llena después de las 14:00. Si quieres mesa sin esperar, ven temprano o pide para llevar.</p>
+        <div class="acciones">
+          <a class="boton boton-azul" [href]="s.mapa" target="_blank" rel="noopener"><app-icono nombre="mapa" /> Cómo llegar</a>
+          <a class="boton boton-contorno" [href]="k.hrefTelefono(s.telefono)" (click)="k.alClicTelefono($event)"><app-icono nombre="telefono" /> Llamar</a>
+          <a class="boton boton-contorno" [href]="k.hrefWhatsapp(s.whatsapp!, sucursalMensaje)" (click)="k.alClicWhatsapp($event, sucursalMensaje)" target="_blank" rel="noopener"><app-icono nombre="whatsapp" /> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    }
+  </section>
+</main>

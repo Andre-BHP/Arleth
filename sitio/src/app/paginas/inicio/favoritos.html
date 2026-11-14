@@ -1,0 +1,76 @@
+<div class="envoltura">
+  <header class="encabezado">
+    <h2 class="titulo-seccion" id="favoritos-titulo"><app-concha class="concha-titulo" />Los favoritos</h2>
+    <p>Los que más recomiendan quienes ya vinieron. Toca uno para verlo de cerca y agregarlo a tu pedido.</p>
+  </header>
+
+  <ol class="bento">
+    @for (f of favoritos; track f.id) {
+      <li [class]="'celda celda-' + f.rango">
+        <button type="button" class="tarjeta" (click)="abrir(f, $event)" aria-haspopup="dialog">
+          <span class="foto" [class.recorte]="f.platillo.foto!.endsWith('recorte')">
+            <app-foto
+              [nombre]="f.platillo.foto!"
+              [alt]="''"
+              [diferir]="true"
+              [tamanos]="f.rango === 1 ? '(min-width: 60rem) 52vw, calc(100vw - 2rem)' : '(min-width: 60rem) 26vw, calc(100vw - 2rem)'"
+            />
+          </span>
+          <span class="sellos">
+            @if (f.rango === 1) {
+              <app-sello tipo="favorito" tamano="grande" />
+            } @else {
+              <app-sello tipo="favorito" />
+            }
+            @if (f.platillo.tags.includes('picante')) { <app-sello tipo="picante" /> }
+          </span>
+          <span class="texto">
+            <span class="nombre">{{ f.platillo.nombre }}</span>
+            <span class="precios dato">{{ resumen(f) }}</span>
+            @if (f.rango === 1 && f.platillo.desc) { <span class="descripcion">{{ f.platillo.desc }}</span> }
+            <span class="solo-lector">, ver detalle</span>
+          </span>
+        </button>
+      </li>
+    }
+  </ol>
+</div>
+
+<dialog #dialogo class="detalle" (cancel)="alCancelar($event)" (click)="clicFuera($event)" aria-labelledby="detalle-nombre">
+  @if (abierto(); as f) {
+    <div class="detalle-caja">
+      <div class="detalle-imagen">
+        <span class="foto" [class.recorte]="f.platillo.foto!.endsWith('recorte')">
+          <app-foto [nombre]="f.platillo.foto!" [alt]="f.platillo.nombre" tamanos="(min-width: 60rem) 55vw, 100vw" clase="vt-plato" />
+        </span>
+      </div>
+      <div class="detalle-texto">
+        <div class="sellos-detalle">
+          @for (t of f.platillo.tags; track t) { <app-sello [tipo]="t" /> }
+        </div>
+        <h3 id="detalle-nombre">{{ f.platillo.nombre }}</h3>
+        @if (f.platillo.desc) { <p class="desc">{{ f.platillo.desc }}</p> }
+        <dl class="tabla-precios">
+          @for (p of f.platillo.precios; track p.t) {
+            <div><dt>{{ p.t }}</dt><dd class="dato">{{ pesos(p.v) }}</dd></div>
+          }
+        </dl>
+        @if (f.cita) {
+          <figure class="cita">
+            <blockquote>“{{ f.cita.texto }}”</blockquote>
+            <figcaption>{{ f.cita.fuente }}</figcaption>
+          </figure>
+        }
+        <div class="acciones">
+          <button type="button" class="boton boton-principal" (click)="pedirEste(f)">
+            <app-icono nombre="bolsa" /> Pedir este
+          </button>
+          <button type="button" class="boton boton-contorno" (click)="cerrar()">Volver</button>
+        </div>
+      </div>
+      <button type="button" class="cerrar" (click)="cerrar()" aria-label="Cerrar">
+        <app-icono nombre="cerrar" />
+      </button>
+    </div>
+  }
+</dialog>

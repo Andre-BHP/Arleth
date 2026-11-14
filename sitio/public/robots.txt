@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boca-del-cielo.test/sitemap.xml
