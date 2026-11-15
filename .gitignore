@@ -20,3 +20,6 @@ sitio/.claude/
 video-heroe/.hyperframes/
 video-heroe/renders/
 video-heroe/node_modules/
+
+# Caché local del detector de diseño
+sitio/.impeccable/hook.cache.json

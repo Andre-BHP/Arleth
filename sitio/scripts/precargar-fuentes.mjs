@@ -13,6 +13,7 @@ for (const f of ['index.html', 'menu/index.html', 'index.csr.html']) {
   if (!fs.existsSync(p)) continue;
   const t = fs.readFileSync(p, 'utf8');
   if (t.includes('rel="preload" href="media/')) continue;
-  fs.writeFileSync(p, t.replace('<meta charset="utf-8">', `<meta charset="utf-8">${enlaces}`));
+  // Después de <base href>: si van antes, en /menu/ se resuelven contra la carpeta de la página.
+  fs.writeFileSync(p, t.replace(/(<base href="[^"]*">)/, `$1${enlaces}`));
 }
 console.log('Fuentes precargadas:', fuentes.join(', '));
