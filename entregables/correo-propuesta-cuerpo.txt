@@ -1,0 +1,38 @@
+Buenas tardes, equipo de Boca del Cielo:
+
+Mi nombre es André Heredia. Desarrollo sitios web en Guadalajara y les escribo porque preparamos una propuesta de página web pensada específicamente para su sucursal de Chapultepec (Morelos 1548), no solo para la marca en general. Les agradeceré mucho si pueden hacerle llegar este correo al encargado de esa sucursal.
+
+Revisamos cómo los encuentra hoy un cliente en internet y vimos algunos puntos que les están costando visitas y pedidos:
+
+- El menú está en imágenes. En el celular hay que hacer zoom para leerlo, no se puede buscar un platillo y Google no puede leer su contenido.
+- El horario no coincide entre sitios. Su página dice martes a domingo de 11:30 a 18:30, pero otros directorios (Cylex, Rappi, Turismo Guadalajara) muestran horarios distintos. Un cliente que llega y encuentra cerrado difícilmente regresa.
+- El enlace de pedidos a domicilio (bocadelcielo.mobi) ya no funciona.
+- La sucursal no tiene una página propia. Quien busca "Boca del Cielo Chapultepec" no encuentra en un solo lugar su horario, cómo llegar, el teléfono y la opción de pedir.
+
+Lo que les proponemos:
+
+1. Una página de la sucursal Chapultepec con horario y aviso de "abierto ahora", botón para llegar con Google Maps, llamar y pedir.
+2. Sus platillos favoritos en primera plana: los que más recomiendan sus clientes en reseñas, como el aguachile negro, el ceviche de pescado del cielo, el taco de tripita de calamar y las carnitas de atún.
+3. El menú completo en texto, con precios, buscador y filtros, cómodo de leer en el celular.
+4. Pedidos por WhatsApp sin comisiones de aplicaciones: el cliente arma su pedido en la página y les llega en un solo mensaje ordenado.
+5. Mejor presencia en Google y Maps, con una página rápida y bien estructurada, y una lista de los datos que conviene unificar en cada directorio.
+
+Ya tenemos un prototipo funcionando que pueden ver aquí: https://andre-bhp.github.io/Arleth/
+Lo marcamos como "prototipo no oficial" y no recibe pedidos; lo hicimos solo para mostrarles la idea con su propio menú.
+
+Nos gustaría reunirnos con el encargado de la sucursal unos 30 minutos para enseñarle el prototipo en persona y escuchar su opinión. Él conoce mejor que nadie el día a día del lugar, y con su ayuda podemos confirmar:
+
+- sus platillos más vendidos;
+- el horario real;
+- el número de WhatsApp que recibe pedidos;
+- las fotos que prefieren;
+- su autorización para usar su marca.
+
+Podemos ir a la sucursal el miércoles 19 o el jueves 20 de noviembre a las 12:00, antes de la hora de más movimiento, o en el día y la hora que mejor les acomode.
+
+Quedo atento a su respuesta. Muchas gracias por su tiempo.
+
+Saludos cordiales,
+
+André Heredia
+andrebernardhp@gmail.com

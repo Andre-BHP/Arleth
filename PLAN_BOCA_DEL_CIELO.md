@@ -1,6 +1,6 @@
 # Plan: rediseño del sitio de Boca del Cielo (Boca Mariscos Chapultepec)
 
-Estado: plan, sin implementar. Fecha: 2026-11-13. Lo ejecuta la sesión **Arleth** en esta carpeta (`C:\Users\andre\OneDrive\Documentos\Arleth`).
+Estado: plan, sin implementar. Fecha: 2026-11-13. Lo ejecuta la sesión **Arleth** en esta carpeta (`C:\Users\andre\OneDrive\Documentos\Proyectos\Arleth`).
 Sitio actual: https://www.bocadelcielogdl.com (Wix). Menú completo ya transcrito en `C:\Users\andre\OneDrive\Documentos\Arthemis\consultas\boca-del-cielo-menu.md`.
 
 > **Aviso:** Boca del Cielo es un negocio real. Esto es una **propuesta o prototipo local**.
