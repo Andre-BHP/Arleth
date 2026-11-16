@@ -1,6 +1,6 @@
 Prototipo no oficial de rediseño del sitio de Boca del Cielo (Guadalajara). No es el sitio del restaurante ni recibe pedidos; las fotos, el menú y la marca son del restaurante.
 
-# Arleth · rediseño de Boca del Cielo
+# Rediseño de Boca del Cielo
 
 Versión publicada (demostración, sin contacto real): https://andre-bhp.github.io/Arleth/
 
